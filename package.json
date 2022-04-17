@@ -1,10 +1,10 @@
 {
-  "name": "Freemind",
-  "displayName": "Freemind",
+  "name": "FreeMind",
+  "displayName": "FreeMind",
   "icon": "resources/icon.png",
   "description": "A mindmap extension for vscode that is easy to use, can be saved, and can be exported to images. Like xmind.",
   "version": "0.1.0",
-  "publisher": "DaChuiOpenSouce",
+  "publisher": "DaChuiOpenSource",
   "repository": {
     "type": "git",
     "url": "https://github.com/DaChuiOpenSource/Vscode-FreeMind.git"
