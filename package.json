@@ -3,7 +3,7 @@
   "displayName": "FreeMind",
   "icon": "resources/icon.png",
   "description": "A mindmap extension for vscode that is easy to use, can be saved, and can be exported to images. Like xmind.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "DaChuiOpenSource",
   "repository": {
     "type": "git",
