@@ -7,7 +7,7 @@
   "publisher": "DaChuiOpenSouce",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/DaChuiOpenSource/Vscode-FreeMind.git"
   },
   "engines": {
     "vscode": "^1.29.0"
