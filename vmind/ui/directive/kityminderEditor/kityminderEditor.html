@@ -1,0 +1,17 @@
+<div class="minder-editor-container">
+  <!-- top-tab directive -->
+  <div class="top-tab" top-tab="minder" editor="editor" ng-if="minder"></div>
+  <!-- search-box directive -->
+  <div search-box minder="minder" ng-if="minder"></div>
+  <!--
+    editor area inited by kityminder.Editor
+    kityminder.Editor defined in expose-editor.js
+   -->
+  <div class="minder-editor"></div>
+  <!-- note-editor directive -->
+  <div class="km-note" note-editor minder="minder" ng-if="minder"></div>
+  <!-- note-editor directive -->
+  <div class="note-previewer" note-previewer ng-if="minder"></div>
+  <!-- navigator directive -->
+  <div class="navigator" navigator minder="minder" ng-if="minder"></div>
+</div>
