@@ -1,7 +1,6 @@
 out
 node_modules
 .vscode-test/
-*.vsix
 vmind/node_modules
 #vmind/bower_components
 /.idea
