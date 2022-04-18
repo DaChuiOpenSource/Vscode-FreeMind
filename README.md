@@ -8,7 +8,7 @@ A mindmap extension for vscode that is easy to use, can be saved, and can be exp
 - Free mindmap
 - Saved to a .vmind file with json content
 - Export to image at the .vmind file location
-- Transpile .xmind to .km
+- Transpile .xmind to .km (When if the prompt "open it anyway?" Continue)
 
 ## Install
 
