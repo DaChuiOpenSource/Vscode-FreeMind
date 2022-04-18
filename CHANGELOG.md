@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.1.3
+
+- Optimization the usage of this extension
+
 ## 0.1.2
 
 - Optimization reduces the size of the bundle
@@ -10,4 +14,4 @@
 
 ## 0.1.0
 
-- first release
+- First release

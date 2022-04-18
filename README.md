@@ -8,7 +8,11 @@ A mindmap extension for vscode that is easy to use, can be saved, and can be exp
 - Free mindmap
 - Saved to a .vmind file with json content
 - Export to image at the .vmind file location
-- Transpile .xmind to .km (When if the prompt "open it anyway?" Continue)
+- Transpile .xmind to .km (When prompt "open it anyway?" Continue)
+
+## Tips
+
+- Use the latest version of vscode
 
 ## Install
 
@@ -20,6 +24,10 @@ A mindmap extension for vscode that is easy to use, can be saved, and can be exp
 1. Install freemind extension
 2. Create a file with extension of vmind
 3. Open the above file
+
+## FAQS
+
+1. If you open a .vmind file, the display of mindmap contents fails. Please download the latest version of vscode.
 
 ## Keyboard Shortcuts
 
