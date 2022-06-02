@@ -1,45 +1,39 @@
-.export {
-  height: 60px;
-  display: flex;
-  justify-content: flex-start;
+.km-btn-export {
+  margin: 0px 5px;
+  &:hover {
+      background-color: @tool-hover;
+      cursor: pointer;
+  }
+
+  &:active {
+      background-color: @tool-active;
+  }
+
+  &.active {
+      box-shadow: none;
+      background-color: @tool-hover;
+  }
+}
+
+.km-export-save {
+  height: 25px;
+  width: 25px;
+  background: url(images/icons.png) no-repeat 0 -919px;
+  background-position-x: 50%;
+}
+
+.km-export-image {
+  height: 25px;
+  width: 100px;
+  background: url(images/icons.png) no-repeat 0 -645px;
+  background-position-x: 50%;
   align-items: center;
+}
 
-  .km-btn-export {
-    margin: 0px 5px;
-    &:hover {
-        background-color: @tool-hover;
-        cursor: pointer;
-    }
-
-    &:active {
-        background-color: @tool-active;
-    }
-
-    &.active {
-        box-shadow: none;
-        background-color: @tool-hover;
-    }
-  }
-
-  .km-export-save {
-    height: 25px;
-    width: 25px;
-    background: url(images/icons.png) no-repeat 0 -919px;
-    background-position-x: 50%;
-  }
-
-  .km-export-image {
-    height: 25px;
-    width: 100px;
-    background: url(images/icons.png) no-repeat 0 -645px;
-    background-position-x: 50%;
-    align-items: center;
-  }
-
-  span {
-    font-size: 14px;
-    font-family: consolas;
-  }
+span {
+  font-size: 14px;
+  font-family: consolas;
+}
 /*  .km-btn-export {
     font-size: 14px;
     padding: 6px 10px;
@@ -81,4 +75,3 @@
       background: rgba(104, 203, 131, 0.8);
     }*!
   }*/
-}

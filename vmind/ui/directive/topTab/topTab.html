@@ -4,7 +4,13 @@
     ng-click="toggleTopTab('file')"
     select="setCurTab('file')"
   >
-    <export minder="minder"></export>
+    <!-- <export minder="minder"></export> -->
+    <save minder="minder"></save>
+    <export-to-image minder="minder"></export-to-image>
+    <theme-list minder="minder"></theme-list>
+    <undo-redo editor="editor"></undo-redo>
+    <arrange minder="minder"></arrange>
+    <expand-level minder="minder"></expand-level>
   </tab>
   <tab
     heading="{{ 'idea' | lang: 'ui/tabs'; }}"
