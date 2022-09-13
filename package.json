@@ -3,7 +3,7 @@
   "displayName": "FreeMind",
   "icon": "resources/icon.png",
   "description": "A mindmap extension for vscode that is easy to use, can be saved, and can be exported to images. Like xmind.",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "publisher": "DaChuiOpenSource",
   "repository": {
     "type": "git",
@@ -64,7 +64,9 @@
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
     "postinstall": "node ./node_modules/vscode/bin/install",
-    "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    "test": "npm run compile && node ./node_modules/vscode/bin/test",
+    "prepublish": "npm run vscode:prepublish",
+    "publish": "vsce publish"
   },
   "dependencies": {
     "xmind": "^0.5.0"

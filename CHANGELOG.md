@@ -1,4 +1,7 @@
 # Change Log
+## 0.1.6
+
+- Change drawingbed.
 
 ## 0.1.5
 

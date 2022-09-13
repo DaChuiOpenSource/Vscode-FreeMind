@@ -1,7 +1,7 @@
 # FreeMind for [Visual Studio Code](http://code.visualstudio.com)
 
 A mindmap extension for vscode that is easy to use, can be saved, and can be exported to images. Like xmind.
-![mindmap](https://jofenxue.gitee.io/jofendrawingbed/opensource/freemap.gif)
+![mindmap](https://dachuiopensource.gitee.io/jofendrawingbed/opensource/freemap.gif)
 
 ## Features
 
