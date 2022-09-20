@@ -10,7 +10,7 @@ import { Xmind, Img } from './services';
  * @param context Extension上下文
  */
 export function activate(context: vscode.ExtensionContext) {
-  //console.log('command activate...');
+  console.log('command activate...');
 
   const openedPanelMap = new Map<string, boolean | undefined | null>();
   let isFirstActivate: boolean = true;
@@ -25,9 +25,11 @@ export function activate(context: vscode.ExtensionContext) {
       const editor: vscode.TextEditor | undefined = vscode.window.activeTextEditor;
       // 获取当前激活编辑器打开的文件名称
       const fileName = (<vscode.TextEditor>editor).document.fileName;
+      // 获取当前vmind文件全称后关闭窗口, 用于打开脑图时关闭.vmind文件
+      vscode.commands.executeCommand('workbench.action.closeActiveEditor');
       const basename = path.basename(fileName);
       const extName = path.extname(fileName);
-      if(extName != '.vmind' && extName != '.xmind') {
+      if (extName != '.vmind' && extName != '.xmind') {
         return;
       }
       // 拼接mindmap的入口文件mindmap.html
@@ -60,9 +62,11 @@ export function activate(context: vscode.ExtensionContext) {
       const importData = getImportData(fileName, extName, xmindService) || '{}';
 
       // 打开脑图同时关闭.vmind文件
-      vscode.commands.executeCommand('workbench.action.closeActiveEditor');
+      // 修复: 1.71.2版本中发现此处关闭了新打开的view脑图窗口,没有关闭数据视图窗口,将此操作提前
+      //vscode.commands.executeCommand('workbench.action.closeActiveEditor');
       //console.log('加载的文件内容：\n' + html);
       // 设置webview的展示内容
+      console.log('displaying vmind content in webview');
       panel.webview.html = html;
 
       // 接收webview发送的message
@@ -157,7 +161,7 @@ export function activate(context: vscode.ExtensionContext) {
 /**
  * Extension消亡时触发
  */
-export function deactivate() {}
+export function deactivate() { }
 
 /**
  * create webview
