@@ -1,4 +1,8 @@
 # Change Log
+## 0.1.8
+
+- Fix the issue of concatenation of open files.
+
 ## 0.1.7
 
 - Fix open .vmind file issues. The activated editor is not expected in the new version vscode.

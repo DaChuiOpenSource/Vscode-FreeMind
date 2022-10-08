@@ -23,6 +23,15 @@ export function activate(context: vscode.ExtensionContext) {
     () => {
       // 获取当前激活的编辑器
       const editor: vscode.TextEditor | undefined = vscode.window.activeTextEditor;
+      if (!editor) {
+        vscode.window.showInformationMessage('No open text editor');
+        return; // No open text editor
+      }
+      const document: vscode.TextDocument | undefined = editor.document;
+      if (document.languageId !== 'vmind' && document.languageId !== 'xmind') {
+        //vscode.window.showInformationMessage('Unsupported file type');
+        return; // Unsupported file type
+      }
       // 获取当前激活编辑器打开的文件名称
       const fileName = (<vscode.TextEditor>editor).document.fileName;
       // 获取当前vmind文件全称后关闭窗口, 用于打开脑图时关闭.vmind文件
